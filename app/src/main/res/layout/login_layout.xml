@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
-            android:hint="Seu email..."
+            android:hint="Email..."
             android:inputType="textWebEmailAddress" />
     </android.support.design.widget.TextInputLayout>
 
@@ -31,14 +31,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:passwordToggleEnabled="true"
+        >
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/editTextSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sua senha..."
-            android:inputType="textPassword" />
+            android:hint="Senha..."
+            android:inputType="textPassword"
+            android:maxLength="10" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
